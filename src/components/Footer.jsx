@@ -3,7 +3,7 @@ import { FaFacebook, FaLinkedin, FaEnvelope, FaInstagram } from "react-icons/fa"
 function Footer() {
   return (
     <footer>
-      <div className="bottom-0 w-full border-t border-gray-200 p-6 z-50 bg-white text-center">
+      <div className=" w-full border-t border-gray-200 p-6 z-50 bg-white text-center">
         <h2 className="font-bold">Brisit Technologies</h2>
         <p className="mt-2">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum minima omnis sed? 
