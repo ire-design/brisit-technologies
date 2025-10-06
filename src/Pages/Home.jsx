@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full bg-gradient-to-b from-white via-slate-50 to-slate-100 text-slate-900">
+    <div className="min-h-screen w-full md:w-4/5 mx-auto bg-gradient-to-b from-white via-slate-50 to-slate-100 text-slate-900">
       {/* HERO */}
       <section className="flex flex-col md:flex-row items-center gap-8 py-14 px-4 md:px-12 w-full relative">
         
@@ -42,7 +42,7 @@ export default function Home() {
       </section>
 
       {/* WHO WE ARE */}
-      <section className="flex flex-col md:flex-row items-center gap-8 py-14 px-4 md:px-12 w-full bg-white rounded-2xl shadow-inner my-8">
+      <section className="flex flex-col md:flex-row items-center gap-8 py-14 px-4 md:px-12 w-full  bg-white rounded-2xl shadow-inner my-8">
         <div className="md:w-1/2 w-full mb-8 md:mb-0">
           <img src="/src/assets/logoImg.jpeg" alt="Brisit company logo and team" className="w-full h-64 md:h-90 object-cover rounded-4xl" />
         </div>
