@@ -10,42 +10,54 @@ function Contact({services}){
         YourMessage: ""
     });
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(form);
-        alert("Message has been successfully sent")
-        setForm({})
-    }
-
     const handleChange= (e) => {
         const{name,value} = e.target;
         setForm((prev) => ({...prev, [name]: value}))
     }
 
+    const handleSubmit = (e) => {
+            e.preventDefault();
+            console.log(form);
+            alert("Message has been successfully sent")
+            setForm({})
+    }
+
     return (
-        <div className="">
-            <h2 className="">Contact Us</h2>
+        <div className=" p-6 max-w-md mx-auto flex  direction justify-center border-4">
+            <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
             <form onSubmit={handleSubmit} className="">
 
                 <input 
                     type="text" 
+                    name="name"
                     value={form.name}
                     placeholder="Name"
-                    onChange= {onChange}
+                    onChange= {handleChange}
                     required
-                    className="border"
+                    className="border p-2 rounded-2xl m-3.5"
                 />
 
-                <input type="email" value={form.name} placeholder="Email" required
-                    className="border"
-                />
-
-                <input type="text" value={form.email} placeholder="Type your message here" 
+                <input 
+                    type="email" 
+                    name="email"
+                    value={form.email} 
+                    onChange={handleChange}
+                    placeholder="Email" 
                     required
-                    className="border"
+                    className="border p-2 rounded"
                 />
 
-                <button type="submit" className=" bg-blue-600 text-white p-2 rounded">
+                <textarea
+                    type="text"
+                    name="YourMessage"
+                    value={form.YourMessage} 
+                    onChange={handleChange}
+                    placeholder="Type your message here" 
+                    required
+                    className="border p-2 rounded"
+                />
+
+                <button type="submit" className=" bg-blue-600 text-white p-2 rounded hover:bg-blue-700 transition">
                     Send
                 </button>
             </form>

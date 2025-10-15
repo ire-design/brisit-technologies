@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full md:w-4/5 mx-auto bg-gradient-to-b from-white via-slate-50 to-slate-100 text-slate-900">
+    <div className="min-h-screen w-full md:w-4/5 mx-auto bg-gray-100 text-slate-900">
       {/* HERO */}
       <section className="flex flex-col md:flex-row items-center gap-8 py-14 px-4 md:px-12 w-full relative">
         
@@ -37,12 +37,12 @@ export default function Home() {
           </ul>
         </div>
         <div className="md:w-1/2 w-full">
-          <img src="/src/assets/repair.jpg" alt="Technician repairing a device" className="w-full h-72 md:h-[420px] object-cover rounded-2xl" />
+          <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx2aXN1YWwtc2VhcmNofDF8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&q=60&w=500" alt="Technician repairing a device" className="w-full h-72 md:h-[420px] object-cover rounded-2xl" />
         </div>
       </section>
 
       {/* WHO WE ARE */}
-      <section className="flex flex-col md:flex-row items-center gap-8 py-14 px-4 md:px-12 w-full  bg-white rounded-2xl shadow-inner my-8">
+      <section className="flex flex-col md:flex-row items-center gap-8 py-14 px-4 md:px-12 w-full bg-gray-50 rounded-2xl shadow-inner my-8">
         <div className="md:w-1/2 w-full mb-8 md:mb-0">
           <img src="/src/assets/logoImg.jpeg" alt="Brisit company logo and team" className="w-full h-64 md:h-90 object-cover rounded-4xl" />
         </div>
@@ -76,19 +76,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER CTA */}
-      <section className="py-10 px-4 md:px-12 w-full">
-        <div className="w-full bg-gradient-to-r from-slate-50 to-white rounded-2xl p-6 md:p-10 flex flex-col md:flex-row items-center justify-between gap-4 shadow">
-          <div>
-            <h4 className="text-lg font-bold text-slate-900">Ready to get started?</h4>
-            <p className="text-slate-600">Contact our team for a free consultation or send a device in for diagnosis.</p>
-          </div>
-          <div className="flex gap-3">
-            <Link to="/contact" className="px-5 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">Contact Us</Link>
-            <Link to="/services" className="px-5 py-3 border rounded-lg text-slate-700 hover:bg-slate-50 transition">View Services</Link>
-          </div>
-        </div>
-      </section>
+      
     </div>
   )
 }
