@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 function Contact({services}){
     const { id } = useParams();
 
+    const selectedService = id && services ? services.find(s => s.id === parseInt(id)) : null;
+
     const [form, setForm] = useState({
         name: "",
         email:"",
@@ -19,11 +21,11 @@ function Contact({services}){
             e.preventDefault();
             console.log(form);
             alert("Message has been successfully sent")
-            setForm({})
+            setForm({ name: "", email:"", YourMessage: ""})
     }
 
     return (
-        <div className=" p-6 max-w-md mx-auto flex  direction justify-center border-4">
+        <div className=" p-6 max-w-md mx-auto flex flex-col justify-center border-4">
             <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
             <form onSubmit={handleSubmit} className="">
 
@@ -48,7 +50,6 @@ function Contact({services}){
                 />
 
                 <textarea
-                    type="text"
                     name="YourMessage"
                     value={form.YourMessage} 
                     onChange={handleChange}
