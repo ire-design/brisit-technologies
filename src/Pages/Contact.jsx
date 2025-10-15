@@ -9,6 +9,7 @@ function Contact({services}){
     const [form, setForm] = useState({
         name: "",
         email:"",
+        service: selectedService ? selectedService.subtitle : "",
         YourMessage: ""
     });
 
