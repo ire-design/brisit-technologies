@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import logoImg from "../assets/logoImg.jpeg"
 
 export default function Home() {
   return (
@@ -44,7 +45,7 @@ export default function Home() {
       {/* WHO WE ARE */}
       <section className="flex flex-col md:flex-row items-center gap-8 py-14 px-4 md:px-12 w-full bg-gray-50 rounded-2xl shadow-inner my-8">
         <div className="md:w-1/2 w-full mb-8 md:mb-0">
-          <img src="/src/assets/logoImg.jpeg" alt="Brisit company logo and team" className="w-full h-64 md:h-90 object-cover rounded-4xl" />
+          <img src={logoImg} alt="Brisit company logo and team" className="w-full h-64 md:h-90 object-cover rounded-4xl" />
         </div>
         <div className="md:w-1/2 w-full space-y-4">
           <h2 className="text-3xl md:text-4xl font-bold">Who We Are</h2>

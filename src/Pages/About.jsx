@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logoImg from "../assets/logoImg.jpeg"
 
 export default function About() {
   return (
@@ -49,7 +50,7 @@ export default function About() {
 
         {/* Floating logo card */}
         <div className="absolute left-6 bottom-6 md:left-10 md:bottom-10 bg-white/80 backdrop-blur-sm border rounded-2xl shadow px-4 py-3 flex items-center gap-3">
-          <img src="/src/assets/logoImg.jpeg" alt="Brisit logo" className="w-10 h-10 rounded-lg object-cover" />
+          <img src={logoImg} alt="Brisit logo" className="w-10 h-10 rounded-lg object-cover" />
           <div className="text-sm">
             <div className="font-semibold text-slate-900">Brisit Technologies</div>
             <div className="text-slate-600">Your local IT partner</div>

@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom' ; 
+import logoImg from "../assets/logoImg.jpeg"
 
 function Header (){
     return(
@@ -7,7 +8,7 @@ function Header (){
 
         <Link to="/" className="flex items-center gap-2">
           <img
-            src="/src/assets/logoImg.jpeg"alt="Brisit Logo"className="h-10 w-10 rounded-full border shadow-sm"
+            src={logoImg}alt="Brisit Logo"className="h-10 w-10 rounded-full border shadow-sm"
           />
           <span className="font-bold text-xl text-blue-800 tracking-wide">
             Brisit Technologies
