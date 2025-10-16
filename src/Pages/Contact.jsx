@@ -26,7 +26,10 @@ function Contact({services}){
     }
 
     return (
-        <div className="min-h-screen w-full md:w-4/5 mx-auto py-12 px-4 md:px-12 bg-gray-50">
+        <div className="min-h-screen w-full md:w-4/5 mx-auto py-12 px-4 md:px-12 bg-gray-50"
+        style={{
+                backgroundImage: "url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1920&q=80')"
+            }}>
             <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12">
                     
                     <div className="text-center mb-8">
