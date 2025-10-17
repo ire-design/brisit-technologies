@@ -10,6 +10,7 @@ function Footer() {
         </p>
 
         {/* Social Icons */}
+        {/* modified */}
         <div className="flex justify-center gap-7 mt-6 text-2xl">
           <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
             <FaFacebook  className="text-[#1877F2]"/>
